@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/MilesGrey/nodejs-api/issues"
   },
-  "homepage": "https://github.com/MilesGrey/nodejs-api#readme"
+  "homepage": "https://github.com/MilesGrey/nodejs-api#readme",
+  "dependencies": {
+    "hapi": "^17.5.1",
+    "nodemon": "^1.17.5"
+  }
 }
