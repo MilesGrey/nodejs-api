@@ -1,4 +1,5 @@
 const hapi = require('hapi');
+const mongoose = require('mongoose');
 
 const server = hapi.server({
     port: 4000,
@@ -17,3 +18,9 @@ const init = async () => {
 };
 
 init();
+
+mongoose.connect('mongodb://admin:1password@ds151651.mlab.com:51651/powerful-api');
+
+mongoose.connection.once('open', () => {
+    console.log('connected to database');
+});
